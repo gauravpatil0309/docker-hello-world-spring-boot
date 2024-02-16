@@ -1,0 +1,19 @@
+
+ntainerDefinitions": [
+        {
+            "name": "web-server",
+            "image": "363852317461.dkr.ecr.us-east-1.amazonaws.com/my_docker_repo:latest",
+            "cpu": 1024,
+            "memory": 1024,
+	    "portMappings": [
+                {
+                    "containerPort": 8080,
+                    "hostPort": 8080
+                }
+            ],
+            "essential": true
+        }
+    ],
+    "family": "web-server"
+}
+
